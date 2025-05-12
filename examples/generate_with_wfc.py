@@ -265,7 +265,7 @@ if __name__ == "__main__":
         create_mesh_from_cfg(
             cfg,
             over_cfg,
-            shape=[8,8],
+            shape=[6,6],
             prefix=mesh_prefix,
             initial_tile_name=args.initial_tile_name,
             mesh_dir=args.mesh_dir,
