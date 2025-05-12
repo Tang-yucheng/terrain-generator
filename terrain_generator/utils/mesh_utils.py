@@ -20,7 +20,7 @@ from trimesh.exchange import xyz
 
 
 def merge_meshes(
-    meshes: List[trimesh.Trimesh], minimal_triangles: bool = False, engine: str = "blender"
+    meshes: List[trimesh.Trimesh], minimal_triangles: bool = False, engine: str = "scad" # engine: str = "blender"
 ) -> trimesh.Trimesh:
     if minimal_triangles:
         mesh = trimesh.boolean.union(meshes, engine=engine)

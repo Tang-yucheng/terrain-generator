@@ -151,6 +151,9 @@ class IndoorNavigationPatternLevels(MeshPattern):
             + tuple([0.0 for _ in range(len(self.levels) - 2)])
         )
         max_hs = self.levels[1:] + tuple([self.levels[2], self.levels[2 + 2]]) + self.levels[2:]
+        print("min_hs ", min_hs)
+        print("max_hs ", max_hs)
+
         # for i in range(len(self.levels) - 2):
         for min_h, max_h in zip(min_hs, max_hs):
             # min_h = self.levels[i]
